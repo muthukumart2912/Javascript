@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random background</title>
+    .
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .app {
+        background-color: purple;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.5rem;
+      }
+      button {
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+      }
+      button:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="app">
+      <div class="container">
+        <h1>Random Background Color</h1>
+        <button onclick="changebg()">Click Me!😁</button>
+      </div>
+    </section>
+    <script>
+      const bgcolors = ["red", "green", "violet", "yellow"];
+
+      const changebg = () => {
+        const genRandomColor = Math.floor(Math.random() * bgcolors.length);
+        const randomColor = bgcolors[genRandomColor];
+        document.querySelector("body").style.backgroundColor = randomColor;
+      };
+    </script>
+  </body>
+</html>
