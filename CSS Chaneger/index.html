@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <h2>Change the Below Image Property using sliders</h2>
+                <p>Javascript project</p>
+            </div>
+            <div class="sliderChanges">
+                <div class="colorChange">
+                    <label for="baseColor">Choose Color</label>
+                    <input type="color" id="baseColor" name="colorpicker" value="#ffffff" />
+                </div>
+                <div class="widthChange">
+                    <label for="widthSize">Choose width</label>
+                    <input type="range" id="widthSize"
+                    name="width"
+                    min="100"
+                    max="500"
+                    value="50"
+                    data-sizing ="px"
+                    >
+                </div>
+                <div class="borderRadius">
+                    <label for="borderSize">Choose Border radius</label>
+                    <input type="range" id="borderSize"
+                    min="0"
+                    max="100"
+                    value="50"
+                    data-sizing ="px"
+                    name="borderRadius"
+                    >
+                </div>
+                <div class="paddingChange">
+                    <label for="padd">Choose Padding</label>
+                    <input type="range" id="padd"
+                    min="0"
+                    max="300"
+                    value="20"
+                    data-sizing ="px"
+                    name="paddingChange"
+                    >
+                </div>
+                <div class="blurImage">
+                    <label for="blurimg">Choose Blur</label>
+                    <input type="range" id="blurImage"
+                    min="0"
+                    max="25"
+                    value="5"
+                    data-sizing ="px"
+                    name="blurImage"
+                    >
+                </div>
+                <div class="images">
+                    <img src="./images/1.jpg" alt="beautiful image for background" width="500" height="auto" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

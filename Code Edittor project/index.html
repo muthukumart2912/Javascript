@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bc68706280.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="container">
+      <div class="left">
+        <div class="box">
+          <label for="html-code"><i class="fa-brands fa-html5"></i>HTML</label>
+          <textarea name="" id="html-code" oninput="runCode()"></textarea>
+        </div>
+        <div class="box">
+          <label for="css-code"><i class="fa-brands fa-css3-alt"></i>CSS</label>
+          <textarea name="" id="css-code" oninput="runCode()"></textarea>
+        </div>
+        <div class="box">
+          <label for="js-code"><i class="fa-brands fa-square-js"></i>JS</label>
+          <textarea name="" id="js-code" oninput="runCode()"></textarea>
+        </div>
+      </div>
+      <div class="right">
+        <label for="Output"><i class="fa-solid fa-play"></i>Output</label>
+          <iframe id="Output"></iframe>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

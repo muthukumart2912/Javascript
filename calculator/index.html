@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <input type="text" name="" id="demo" placeholder="0">
+    <div>
+        <button onclick="display(1)">1</button>
+        <button onclick="display(2)">2</button>
+        <button onclick="display(3)">3</button>
+        <button onclick="display(4)">4</button>
+        <button onclick="clearAll()">clear</button>
+        <button onclick="removeLast()">remove</button>
+    </div>
+    <script>
+        let getInp = document.getElementById('demo');
+        
+        function display(num){
+            getInp.value += num
+        }
+        function clearAll(){
+            getInp.value = ""
+        }
+        function removeLast(){
+            getInp.value = getInp.value.slice()
+        }
+    </script>
+</body>
+</html>
